@@ -1,0 +1,288 @@
+/* body{
+    background-color: blanchedalmond;
+    margin:0;
+}
+.head{
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+#loginForm{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+    border:1px solid black;
+    width:30%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.form{
+    display: flex;
+    justify-content: center;
+    
+}
+#submit{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10%;
+} */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+    /* width: 100%; */
+    background-color: lightcyan;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: gray;
+    width: 100%;
+/*     position: sticky;
+    top: 0; */
+    border-bottom: 1px solid white;
+}
+
+ul{
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    gap: 40px;
+}
+
+
+
+button {
+    background-color: lightskyblue;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* main section */
+main
+{
+    width: 100%;
+    min-height: 75vh;
+    background-color: lightblue;
+}
+
+.main-family{
+    width: 98%;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.show-members{flex-basis: 55%;}
+
+.family{flex-basis: 45%;}
+
+#show-detail
+{
+  display: none;
+  width: 50%;
+  position: fixed;
+}
+
+/* Table Section  */
+h2{
+    margin-bottom: 20px;
+}
+.data-table
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /* box-shadow: 0 0 8px 3px whitesmoke; */
+    width: 70%;
+  }
+  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 12px;
+    
+  }
+
+  tr:nth-child(even) {
+    background-color: lightslategray;
+  }
+ 
+  th
+  {
+    background-color: gray;
+    color: red;
+  }
+  td{
+    color: black;
+  }
+  tr:hover td{
+    background-color:  lightslategray;
+    color: white
+  }
+
+/* add new member section*/
+
+.add-members{
+    width: 80%;
+    display: none; 
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    padding: 14px;
+}
+
+label{ font-size: 20px;}
+
+input, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px 20px;
+    border: 1px solid #ccc;
+ } 
+
+ .member-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16%;
+ }
+
+/* login page CSS */
+
+.login-section
+{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    min-height: 76vh;
+}
+
+input:disabled
+{
+  color: black;
+}
+
+.form-container
+{
+  display: grid;
+  place-items: center;
+  margin-top: 3%;
+}
+
+#login-form{
+  max-width: 26%;
+}
+
+#login-btn{width: 100%;}
+
+/* Footer section */
+footer{
+    background-color: #000000;
+    color: #F5F5F5;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    border-top: 1px solid white;
+}
+
+@media (max-width: 800px)
+{
+  #login-form{
+    max-width: 80%;
+  }
+
+  header
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button{
+    width: 100%;
+  }
+
+  header ul
+  {
+    display: block;
+  }
+
+  .main-family
+  {
+    display: block;
+  }
+
+  .family
+  {
+    display: grid;
+    place-items:center ;
+  }
+}
+/* about */
+.about h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.about ul {
+  margin: 10px 0;
+  list-style-type: disc;
+  padding-left: 20px;
+  display: block;
+}
+
+.about ul li {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  list-style-type: circle;
+}
+
+
+.action-td
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+

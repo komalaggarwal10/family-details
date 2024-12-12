@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Detail Portal</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+     
+     <header>
+       
+        <ul>
+            <li>Name: <span id="user-name"></span></li>
+            <li>Age: <span id="user-age"></span></li>
+            <li>Email: <span id="user-email"></span></li>
+        </ul>
+    
+        <ul>
+            <li><button onclick="addMember()">Add Member</button></li>
+            <li><button onclick="logout()">Logout</button></li>
+           
+        </ul>
+    </header>
+    <main>
+        <section class="main-family">
+            <div class="show-members">
+                <div class="data-table">
+                    <Caption><h2>Family Details</h2></Caption>
+                    <table id="family-member">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Relationship</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">                
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    
+            <div class="family">
+                <div class="about" id="about-website">
+                    <h1>&#x1F3E0; Family Detail Portal </h1>
+
+                    <p>Welcome to the <strong>Family Portal</strong>, your one-stop solution for managing family member details with ease and clarity! Here's how it works:</p>
+                
+                    <p>&#x1F4A1; Manage your family data like never before – all in one place!</p>
+                
+                        <button onclick="addMember()">Add Member</button>
+                </div>
+
+                <div id="show-detail">
+                    <Caption><h2>Member Details</h2></Caption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Field</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>First Name</td>
+                                <td id="first-name"></td>
+                            </tr>
+                            <tr>
+                                <td>Family Name</td>
+                                <td id="family-name"></td>
+                            </tr>
+                            <tr>
+                                <td>Date of Birth</td>
+                                <td id="dob"></td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td id="age"></td>
+                            </tr>
+                            <tr>
+                                <td>Relation</td>
+                                <td id="relation"></td>
+                            </tr>
+                            <tr>
+                                <td>Blood Group</td>
+                                <td id="blood-group"></td>
+                            </tr>
+                            <tr>
+                                <td>Marital Status</td>
+                                <td id="marital-status"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td id="gender"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="add-members" id="add-member">
+                    <h2>Fill Member's Details</h2>
+                    <form id="family-form">
+                        <div class="family-detail">
+                            <label for="fname"><b>First Name</b></label>
+                            <input type="text" id="fname" name="fname" placeholder="First Name" requried>
+                    
+                            <label for="lname"><b>Family Name</b></label>
+                            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+        
+                            <label for="dob"><b>Date of Birth</b></label>
+                            <input type="date" name="dob" id="dob" required>
+                        
+                            <label for="relation"><b>Relation</b></label>
+                            <input type="text" name="relation" id="relation" placeholder="Relation" required>
+        
+                            <label for="bloodGroup"><b>Blood Group</b></label>
+                            <input list="blood-types" name="bloodGroup" id="blood-group" placeholder="Blood Group" required>
+                            <datalist id="blood-types">
+                                <option value="A +">
+                                <option value="A -">
+                                <option value="B +">
+                                <option value="B -">
+                                <option value="AB +">
+                                <option value="AB -">
+                                <option value="O +">
+                                <option value="O -">
+                            </datalist>
+
+                            <label for="maritalStatus"><b>Marital Status</b></label>
+                            <select name="maritalStatus" id="marital-status" required>
+                                <option value="" >--Select--</option>
+                                <option value="married">Married</option>
+                                <option value="unmarried">Unmarried</option>
+                                <option value="divorced">Divorced</option>
+                            </select>
+        
+                            <label for="gender"><b>Gender</b></label>
+                            <input list="genders" name="gender" id="gender" placeholder="Gender" required>
+                            <datalist id="genders">
+                                <option value="Male">
+                                <option value="Female">
+                                <option value="Transgender">
+                            </datalist>
+        
+                            <div class="member-btn">
+                                <button id="submit-btn" type="submit">Add</button>
+                                <button id="close-btn" type="button">Close</button>
+                            </div>   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>   
+    </main>
+
+    <footer>
+        <p>Made with &#10084;&#65039; by Komal </p>
+    </footer>
+</body>
+<script src="./scripts3.js"></script>
+</html>
